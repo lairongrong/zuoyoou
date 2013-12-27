@@ -1,0 +1,345 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    line-height: 1.6;
+    font-family: "Microsoft YaHei","微软雅黑",Helvetica,"黑体",Arial,Tahoma;
+    color: #222;
+    font-size: 14px;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dd,
+fieldset,
+textarea { margin: 0 }
+input,
+textarea,
+button,
+a { outline: 0 }
+a {
+    color: #2e7dc6;
+    text-decoration: none;
+}
+a:hover { text-decoration: underline }
+.head .inner {
+    *zoom: 1;
+    height: 60px;
+}
+.head .inner:after {
+    content: "\200B";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.head .inner.wrp {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.head_box {
+    position: relative;
+    background-color: #f3f3f3;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.15),inset 0 -1px 0 0 #fcfcfc;
+    -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.15),inset 0 -1px 0 0 #fcfcfc;
+    -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.15),inset 0 -1px 0 0 #fcfcfc;
+    border-top: 4px solid #67ad03;
+    border-bottom: 1px solid #c3c3c3;
+}
+.container_box {
+    min-height: 650px;
+    border: 1px solid #d3d3d3;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 #e3e3e3;
+    -moz-box-shadow: 0 2px 2px 0 #e3e3e3;
+    -webkit-box-shadow: 0 2px 2px 0 #e3e3e3;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.container_hd,
+.main_hd {
+    border-bottom: 1px solid #d3d3d3;
+    font-size: 14px;
+    color: #545454;
+    box-shadow: inset 0 1px 0 0 #fcfcfc;
+    -moz-box-shadow: inset 0 1px 0 0 #fcfcfc;
+    -webkit-box-shadow: inset 0 1px 0 0 #fcfcfc;
+    background-color: #e9e9e9;
+    background-image: -moz-linear-gradient(top,#f3f3f3 0,#e3e3e3 100%);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#f3f3f3),to(#e3e3e3));
+    background-image: -webkit-linear-gradient(top,#f3f3f3 0,#e3e3e3 100%);
+    background-image: -o-linear-gradient(top,#f3f3f3 0,#e3e3e3 100%);
+    background-image: linear-gradient(to bottom,#f3f3f3 0,#e3e3e3 100%);
+    line-height: 36px;
+    height: 36px;
+}
+.container_hd .info,
+.main_hd .info {
+    margin-top: -36px;
+    margin-right: 20px;
+    font-size: 14px;
+    text-align: right;
+}
+.logo {
+    float: left;
+    padding-top: 8px;
+    font-size: 24px;
+}
+.logo a {
+    display: block;
+    width: 248px;
+    height: 40px;
+    overflow: hidden;
+    text-decoration: none;
+    *background: transparent url(/mpres/htmledition/images/bg/bg_logo.png) 0 0 no-repeat;
+    *line-height: 120px;
+}
+.account {
+    float: right;
+    padding-top: 10px;
+    font-size: 0;
+}
+.account a { color: #222 }
+.account a:hover { color: #2e7dc6 }
+.account_meta {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    font-size: 14px;
+}
+.account_info {
+    position: relative;
+    margin-right: 5px;
+}
+.account_info .avatar {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 38px;
+    height: 38px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background-color: #f0f0f0;
+}
+.account_info .type {
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+.account_info .nickname {
+    display: inline-block;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 18px;
+}
+.account_inbox {
+    position: relative;
+    font-size: 11px;
+    z-index: 1;
+    margin-top: 1px;
+}
+.account_inbox.on .account_inbox_switch {
+    position: relative;
+    z-index: 1;
+    border-color: #adadad;
+    border-top-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    background-color: #eee;
+}
+.account_inbox_switch {
+    display: block;
+    width: 45px;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-bottom-width: 0;
+}
+.account_inbox_switch:hover { text-decoration: none }
+.account_inbox_switch i.icon_common {
+    cursor: pointer;
+    vertical-align: top;
+    margin-top: 16px;
+}
+.account_inbox_switch i.inbox { *margin-top: 6px }
+.account_inbox_switch i.notices {
+    *margin-top: 6px;
+    margin-left: -12px;
+}
+.account_message_box {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: -1px;
+    padding: .5em 0;
+    border: 1px solid #adadad;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-top-left-radius: 0;
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    background-color: #eee;
+}
+.account_message_box ul { width: 190px }
+.account_message_box li { min-height: 32px }
+.account_message_link {
+    position: relative;
+    display: block;
+    line-height: 32px;
+    padding-left: 1em;
+}
+.account_message_link strong {
+    display: block;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 4em;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+.account_message_link .read_more {
+    position: absolute;
+    right: 1em;
+    top: 0;
+    color: #2e7dc6;
+    cursor: pointer;
+}
+.account_message_link:hover {
+    background-color: #eee;
+    text-decoration: none;
+}
+.account_logout a {
+    display: inline-block;
+    margin-top: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: inset 1px 0 0 0 #fff;
+    -moz-box-shadow: inset 1px 0 0 0 #fff;
+    -webkit-box-shadow: inset 1px 0 0 0 #fff;
+    border-left: 1px solid #adadad;
+}
+.help a{
+	display: inline-block;
+    margin-right: 2px;
+    margin-top: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: inset 1px 0 0 0 #fff;
+    -moz-box-shadow: inset 1px 0 0 0 #fff;
+    -webkit-box-shadow: inset 1px 0 0 0 #fff;
+    border-left: 1px solid #adadad;
+}
+.contact_us a{
+	display: inline-block;
+    margin-right: 2px;
+    margin-top: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: inset 1px 0 0 0 #fff;
+    -moz-box-shadow: inset 1px 0 0 0 #fff;
+    -webkit-box-shadow: inset 1px 0 0 0 #fff;
+    border-left: 1px solid #adadad;
+}
+.account_faq { padding-top: 18px }
+.account_faq a { display: inline-block }
+.body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5em 0 3.5em
+}
+.foot {
+    padding: 24px 0;
+    color: #dadada;
+    text-align: center;
+    background-color: #727171;
+}
+.col_main,
+.col_side {
+    display: table-cell;
+    vertical-align: top;
+    height: 650px;
+}
+.col_main {
+    width: 2000px;
+}
+.col_side {
+    width: 19%;
+    background-color: #f3f3f3;
+    /* Make sure that jQuery menu has high z index to stay on top.*/
+    position: relative;
+    z-index: 99
+}
+.col_side,
+.inner_side {
+    min-height: 1px;
+}
+.inner_main {
+    overflow: hidden;
+}
+.inner_side { width: 185px }
+.col_side_primary { width: 190px }
+.col_main_primary {
+    overflow: hidden;
+}
+.side_l .col_side {
+    *float: left;
+    border-right: 1px solid #d3d3d3;
+}
+.side_l .col_side_primary {
+    float: left;
+    border-right: 1px solid #d3d3d3;
+    margin-right: -1px;
+}
+.side_l .col_main_primary { border-left: 1px solid #d3d3d3 }
+.side_l.inner_container_box .inner_side {
+    float: left;
+    border-right: 1px solid #d3d3d3;
+}
+.side_l.inner_container_box.split .inner_side {
+    margin-right: 14px;
+    border-right-width: 0;
+}
+.side_r .col_side {
+    *float: right;
+    border-left: 1px solid #d3d3d3;
+}
+.side_r .col_side_primary {
+    float: right;
+    border-left: 1px solid #d3d3d3;
+    margin-left: -1px;
+}
+.side_r .col_main_primary { border-right: 1px solid #d3d3d3 }
+.side_r.inner_container_box .inner_side {
+    float: right;
+    border-left: 1px solid #d3d3d3;
+}
+.side_r.inner_container_box.split .inner_side {
+    margin-left: 14px;
+    border-left-width: 0;
+}
+#menu .sub_menu{
+	width: 80px;
+}
